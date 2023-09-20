@@ -1,0 +1,79 @@
+.activities-title {
+  text-align: center;
+}
+
+.activity-card:hover .activity-img {
+  transform: scale(1.1);
+}
+
+.activity-card {
+  height: 8rem;
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 18px;
+  display: flex;
+
+  width: 20rem;
+  height: 8rem;
+  padding: 1rem;
+  margin: 1rem auto;
+
+  border: 1px solid #ccc;
+  .activity-img {
+    width: 12rem;
+    height: 6rem;
+    margin-right: 1rem;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 12px;
+  }
+
+  .activity-title {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    padding: 0.5rem 0;
+    font-weight: 500;
+  }
+
+  .activity-anchor-icon {
+    padding-left: 0.5rem;
+  }
+}
+
+.bread {
+  padding: 0 1rem;
+
+  > a:not(:last-child) {
+    text-decoration: underline;
+  }
+
+  > span:last-child::before {
+    content: " > ";
+    color: black;
+  }
+}
+
+.activity-img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+.activity-info {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 1rem;
+  > blockquote {
+    text-align: center;
+    padding: 1rem;
+  }
+  .description {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+}
