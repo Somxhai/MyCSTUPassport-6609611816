@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  font-weight: 500;
+  src: "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  --sub-navbar-color: #ddd;
+  --sub-navbar-hint-color: #d4d4d4;
+  --primary-color: #683fd7;
+  --secondary-color: #556440;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-bar {
+  padding: 1rem 2.5rem;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  z-index: 40;
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-size: 1.75rem;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  .sub-navbar > a {
+    color: var(--sub-navbar-hint-color);
+    margin: 0 0.5rem;
+  }
+
+  .sub-navbar > a:hover {
+    color: var(--primary-color);
+  }
+}
+.nav-bar + .content {
+  padding: 4rem 0;
+}
+
+.content {
+  .introduce-video {
+    width: 40rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+    display: block;
+    height: auto;
+  }
+
+  .sign-section {
+    text-align: center;
+    color: var(--secondary-color);
+    .hand-sign {
+      color: black;
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+      font-size: 2rem;
+      font-family: "Dancing Script", cursive;
+    }
+  }
+}
+
+.hero {
+  margin: 0 auto;
+  width: fit-content;
+
+  > img {
+    width: auto;
+    height: 34rem;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  > figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+  }
+}
+.information-section {
+  padding: 0 4rem;
+
+  .passport-title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  > dl > dt {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-top: 1rem;
+  }
+
+  .note {
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 12px;
+    > p {
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+    }
+    margin: 4rem auto;
+    width: fit-content;
+    text-align: center;
+
+    > ol {
+      text-align: left;
+      list-style: decimal;
+      list-style-position: inside;
+    }
+  }
+}
