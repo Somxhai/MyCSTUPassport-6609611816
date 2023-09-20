@@ -3,52 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/advisor.css" />
     <title>Advisors</title>
   </head>
   <body>
-    <nav>
-        <h1><a href="/">Passport<a/></h1>
+    <nav class="nav-bar">
+      <a class="title" href="/">Passport</a>
+      <div class="sub-navbar">
+        <a href="advisor.html">Advisor</a>
+        <a href="activities.html">Activities</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <section class="professor-section">
+        <img
+          loading="lazy"
+          src="https://comscithammasatu.github.io/cs100/Static%20Web/Lecture-MP1.png"
+          class="professor-img"
+          alt="Asst.Prof.Dr. MONVORARAT PONGPAIBOON"
+        />
+        <p class="professor-name">Asst.Prof.Dr. MONVORARAT PONGPAIBOON</p>
         <div>
-          <a href="/advisor.html">Advisor</a>
-          <a href="/activities.html">Activities</a>
-        </div>
-      </nav>
-    <img
-      src="https://comscithammasatu.github.io/cs100/Static%20Web/Lecture-MP1.png"
-      height="400"
-      alt="Asst.Prof.Dr. MONVORARAT PONGPAIBOON"
-    />
-    <div style="padding: 10px; text-align: left;">
-        <p>
-            <strong>Contact:</strong> pmonvora@tu.ac.th
-        </p>
-        <p>
+          <p><strong>Contact:</strong> pmonvora@tu.ac.th</p>
+          <p>
             <strong>Research Interest:</strong>
-        </p>
-        <ul>
+          </p>
+          <ul>
             <li>Software economics</li>
             <li>Software process and improvement</li>
             <li>Software metrics</li>
             <li>Process simulation</li>
-        </ul>
-    </div>
-    <img
-      src="https://comscithammasatu.github.io/cs100/Static%20Web/Lecture-WP2.png"
-      height="400"
-      alt="Asst.Prof.Dr. Wanida Putthividhya"
-    />
-    <div>
-        <p>
-            <strong>Contact:</strong> wanidap@cs.tu.ac.th
-        </p>
-        <p>
+          </ul>
+        </div>
+      </section>
+
+      <section class="professor-section">
+        <img
+          loading="lazy"
+          src="https://comscithammasatu.github.io/cs100/Static%20Web/Lecture-WP2.png"
+          class="professor-img"
+          alt="Asst.Prof.Dr. Wanida Putthividhya"
+        />
+        <p class="professor-name">Asst.Prof.Dr. Wanida Putthividhya</p>
+        <div>
+          <p><strong>Contact:</strong> wanidap@cs.tu.ac.th</p>
+          <p>
             <strong>Research Interest:</strong>
-        </p>
-        <ul>
+          </p>
+          <ul>
             <li>Quality of Service (Network QoS)</li>
             <li>Congestion Control</li>
             <li>Network Security and Operating systems</li>
-        </ul>
-    </div>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
