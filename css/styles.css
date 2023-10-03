@@ -15,10 +15,15 @@
   --secondary-color: #556440;
 }
 
+body {
+  cursor: url("../images/fat_face.jpg"), auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 
 button {
   border: none;
@@ -31,8 +36,11 @@ button {
   height: auto;
 }
 
+.page-title {
+  text-align: center;
+}
 .nav-bar {
-  padding: 1rem 2.5rem;
+  padding: 1rem 0.75rem;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
   width: 100%;
   z-index: 40;
@@ -44,7 +52,7 @@ button {
   justify-content: space-between;
 
   .title {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     &:hover {
       color: var(--primary-color);
     }
@@ -52,8 +60,10 @@ button {
 
   .sub-navbar > a {
     color: var(--sub-navbar-hint-color);
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
+    
   }
+
 
   .sub-navbar > a:hover {
     color: var(--primary-color);
@@ -61,16 +71,8 @@ button {
 }
 
 .content {
-  padding: 6rem 1rem;
-  width: fit-content;
+  padding: 6rem 0.75rem;
   margin: 0 auto;
-  .introduce-video {
-    width: 40rem;
-    margin: 2rem auto;
-    border-radius: 12px;
-    display: block;
-    height: auto;
-  }
 
   .sign-section {
     text-align: center;
@@ -83,24 +85,36 @@ button {
       font-family: "Dancing Script", cursive;
     }
   }
-}
 
-.hero {
-  margin: 0 auto;
-  width: fit-content;
-
-  > img {
-    width: auto;
-    height: 34rem;
+  .profile {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
     object-fit: cover;
     border-radius: 12px;
   }
-  > figcaption {
+  .profile-caption {
     text-align: center;
     font-size: 0.8rem;
     color: #999;
   }
 }
+
+.video-container {
+  .introduce-video {
+    width: 100%;
+    height: 100%;
+    max-width: 44rem;
+    object-fit: cover;
+    margin: 2rem auto;
+    border-radius: 12px;
+    display: block;
+    height: auto;
+  }
+}
+
 .information-section {
   padding: 0 4rem;
 
@@ -116,7 +130,7 @@ button {
 
   .note {
     border: 1px solid #ddd;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 12px;
     > p {
       font-size: 1.5rem;
@@ -130,6 +144,23 @@ button {
       text-align: left;
       list-style: decimal;
       list-style-position: inside;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 6rem 1rem;
+
+    .profile {
+      max-width: 24rem;
+    }
+  }
+  .nav-bar {
+    padding: 1rem 2.5rem;
+
+    .title {
+      font-size: 1.5rem;
     }
   }
 }
