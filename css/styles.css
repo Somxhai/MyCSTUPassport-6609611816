@@ -12,6 +12,7 @@
   --sub-navbar-color: #ddd;
   --sub-navbar-hint-color: #bdbdbd;
   --primary-color: #683fd7;
+  --primary-color-accent: #866cce;
   --secondary-color: #556440;
 }
 
@@ -23,7 +24,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 
 button {
   border: none;
@@ -61,9 +61,7 @@ button {
   .sub-navbar > a {
     color: var(--sub-navbar-hint-color);
     margin: 0 0.25rem;
-    
   }
-
 
   .sub-navbar > a:hover {
     color: var(--primary-color);
@@ -94,6 +92,9 @@ button {
     height: auto;
     object-fit: cover;
     border-radius: 12px;
+  }
+  .profile[name="bald"] {
+    display: none;
   }
   .profile-caption {
     text-align: center;
@@ -148,19 +149,24 @@ button {
   }
 }
 
+// is this for tablet?
+// yes 🤫🤫🤫
 @media screen and (min-width: 768px) {
-  .content {
-    padding: 6rem 1rem;
-
-    .profile {
-      max-width: 24rem;
-    }
+  .content .profile[name="fat"] {
+    display: none;
   }
-  .nav-bar {
-    padding: 1rem 2.5rem;
+  .content .profile[name="bald"] {
+    display: block;
+  }
+}
 
-    .title {
-      font-size: 1.5rem;
-    }
+// what about this
+// desktop ofc lil bro😎
+@media screen and (min-width: 1024px) {
+  .content .profile[name="bald"] {
+    display: none;
+  }
+  .content .profile[name="fat"] {
+    display: block;
   }
 }
